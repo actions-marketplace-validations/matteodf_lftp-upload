@@ -43,6 +43,10 @@ inputs:
     description: "Number of parallel connections"
     required: false
     default: "5"
+  extraFlags:
+    description: "Additional flags to pass to the lftp mirror command"
+    required: false
+    default: ""
 runs:
   using: "docker"
   image: "Dockerfile"
